@@ -1,5 +1,5 @@
 .header {
-  background: #c31162;
+  background: #efefef;
   padding-top: 10px;
   padding-bottom: 10px;
   position: fixed;
@@ -8,15 +8,12 @@
   z-index: 10;
 
   @include media(desktop) {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 }
 
 .header-container {
-  @include media(desktop) {
-    padding: 0 24px;
-  }
 }
 
 .nav {
@@ -25,9 +22,10 @@
   justify-content: space-between;
 
   @include media(desktop) {
-    justify-content: start;
-    gap: 52px;
   }
+}
+
+.logo-icon {
 }
 
 .header-logo-link {
@@ -40,17 +38,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 39px;
+    border: 1px solid #adb2d4;
+    border-radius: 24px;
+    padding: 8px 32px;
   }
 }
 
 .nav-list-link {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 1.5;
-  text-align: center;
-  color: #fff;
+  color: #232533;
   transition: all 0.3s ease-in-out;
 
   &:hover,
@@ -63,10 +63,15 @@
 
 .nav-btn {
   background-color: transparent;
-  width: 32px;
-  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include media(desktop) {
     display: none;
   }
+}
+
+.menu-icon {
+  stroke: #232533;
 }
