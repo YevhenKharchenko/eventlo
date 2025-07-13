@@ -61,9 +61,23 @@ html {
   font-size: 16px;
   line-height: 1.5;
   color: #232533;
+  max-width: max-content;
   margin-bottom: 24px;
 
   @include media(desktop) {
     font-size: 18px;
+  }
+}
+
+.section-subtitle {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #232533;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    font-size: 40px;
   }
 }

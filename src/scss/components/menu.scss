@@ -10,6 +10,7 @@
   position: fixed;
   top: 0;
   right: 0;
+  left: 0;
   z-index: 10;
   height: 100%;
   max-height: 424px;
@@ -18,7 +19,6 @@
   opacity: 0;
   transition: all 0.3s ease-in-out;
   visibility: hidden;
-  position: relative;
 }
 
 .close-btn {
@@ -33,6 +33,7 @@
   left: 0;
   right: 0;
   margin: 0 auto;
+  max-width: max-content;
 
   @include media(desktop) {
     display: none;
