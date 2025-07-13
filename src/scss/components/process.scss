@@ -42,6 +42,16 @@
 }
 
 .process-list-item {
+  background-image: url(../img/process/process-connector-mob.png);
+  background-repeat: no-repeat;
+  background-position: top 45px left;
+  background-size: auto;
+
+  @include media(desktop) {
+    background-image: url(../img/process/process-connector-desk.png);
+    background-position: top 52px left;
+    width: 100%;
+  }
 }
 
 .process-item-step-text {
@@ -50,20 +60,11 @@
   font-size: 22px;
   line-height: 1.3;
   color: #efefef;
-  margin-bottom: 16px;
+  margin-bottom: 42px;
 
   @include media(desktop) {
     font-size: 28px;
-  }
-}
-
-.connector-icon {
-  margin-bottom: 16px;
-  fill: none;
-
-  @include media(desktop) {
-    width: 100%;
-    height: 8px;
+    margin-bottom: 40px;
   }
 }
 

@@ -1,3 +1,3 @@
 import './js/header.js';
-import './js/reviews.js';
+import './js/testimonials.js';
 import './js/banner.js';

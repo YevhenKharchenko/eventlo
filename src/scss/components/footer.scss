@@ -1,13 +1,21 @@
 .footer {
   background: #126fff;
-  padding-top: 40px;
-  padding-bottom: 16px;
-
-  @include media(desktop) {
-  }
 }
 
-.footer-container {
+.footer-wrapper {
+  padding-top: 40px;
+  padding-bottom: 16px;
+  background-image: url(../img/footer/footer-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto;
+  max-width: 375px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    background-image: url(../img/footer/footer-bg-desk.png);
+    max-width: 1440px;
+  }
 }
 
 .footer-nav {

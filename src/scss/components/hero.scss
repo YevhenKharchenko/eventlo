@@ -71,4 +71,15 @@
   line-height: 1.5;
   color: #fff;
   width: 100%;
+  transition: all 0.3s ease-in-out;
+
+  &:active {
+    background: #3483fe;
+  }
+
+  @include media(desktop) {
+    &:hover {
+      background: #3483fe;
+    }
+  }
 }
