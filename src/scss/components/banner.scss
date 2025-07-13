@@ -1,8 +1,8 @@
 .cookie-banner-section {
-  background: #fff;
-  padding: 36px 20px;
+  background: #232533;
+  padding: 32px;
   width: 100%;
-  max-width: 357px;
+  max-width: 343px;
   margin: 0 auto;
   position: fixed;
   left: 0;
@@ -13,70 +13,44 @@
   display: none;
 
   @include media(desktop) {
-    padding: 90px 72px;
-    max-width: 902px;
+    max-width: 1262px;
   }
 }
 
-.cookie-close-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 36px;
-  height: 36px;
-  margin-bottom: 42px;
-  margin-left: auto;
-
+.cookie-banner-wrapper {
   @include media(desktop) {
-    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .cookie-banner-text {
-  font-family: 'Fredoka', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 1.5;
-  color: #1e1e1e;
-  margin-bottom: 42px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
 
   @include media(desktop) {
-    font-size: 36px;
-    margin-bottom: 64px;
+    font-size: 18px;
+    text-align: left;
+    max-width: 622px;
+    margin-bottom: 0;
   }
 }
 
 .cookie-banner-buttons {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
 
   @include media(desktop) {
-    justify-content: end;
-    gap: 48px;
-  }
-}
-
-.cookie-decline-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid #1e1e1e;
-  padding: 8px 24px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.5;
-  text-align: center;
-  color: #1e1e1e;
-  width: 100%;
-  max-width: 156px;
-
-  @include media(desktop) {
-    padding: 13px 28px;
-    font-size: 20px;
-    max-width: 230px;
+    flex-direction: row;
+    gap: 32px;
   }
 }
 
@@ -84,21 +58,41 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #c31162;
-  padding: 11px 24px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
+  background: #fff;
+  border-radius: 28px;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 1.5;
-  text-align: center;
-  color: #fff;
+  color: #232533;
   width: 100%;
-  max-width: 153px;
+  max-width: 256px;
 
   @include media(desktop) {
-    padding: 16px 28px;
     font-size: 20px;
-    max-width: 226px;
+    width: 256px;
+  }
+}
+
+.cookie-decline-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 28px;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fff;
+  width: 100%;
+  max-width: 256px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    width: 256px;
   }
 }
 
